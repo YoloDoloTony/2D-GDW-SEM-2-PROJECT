@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
         top = !top;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
         //Check if Player is touching roof or floor
         for (int i = 0; i < collision.contacts.Length; i++)
@@ -101,5 +101,11 @@ public class PlayerController : MonoBehaviour
                 isGrounded = true;
             }
         }
+    }*/
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        isGrounded = true;
     }
+
 }
