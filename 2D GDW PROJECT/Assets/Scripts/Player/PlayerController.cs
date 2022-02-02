@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
             SwitchGravity();
         }
     }
+   
 
     //Player Movement
     private void MovePlayer()
