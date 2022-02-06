@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     //Gravity Variables
     bool top;
     bool isGrounded;
+    bool isVertical;
+    bool isRight;
 
     void Start()
     {
@@ -29,29 +31,76 @@ public class PlayerController : MonoBehaviour
             SwitchGravity();
         }
     }
-   
 
     //Player Movement
     private void MovePlayer()
     {
         Vector2 movementDir = new Vector2(0.0f, 0.0f);
 
-        if (Input.GetKey(KeyCode.A))
+        //Horizontal player movement
+        if (!isVertical)
         {
-            movementDir += new Vector2(-1.0f, 0.0f);
-
-            if (facingRight)
+            if (Input.GetKey(KeyCode.A))
             {
-                FaceDirection();
+                movementDir += new Vector2(-1.0f, 0.0f);
+
+                if (facingRight)
+                {
+                    FaceDirection();
+                }
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                movementDir += new Vector2(1.0f, 0.0f);
+
+                if (!facingRight)
+                {
+                    FaceDirection();
+                }
             }
         }
-        if (Input.GetKey(KeyCode.D))
+        //Vertical (right) player movement
+        if (isVertical && isRight)
         {
-            movementDir += new Vector2(1.0f, 0.0f);
-
-            if (!facingRight)
+            if (Input.GetKey(KeyCode.A))
             {
-                FaceDirection();
+                movementDir += new Vector2(0.0f, -1.0f);
+
+                if (facingRight)
+                {
+                    FaceDirection();
+                }
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                movementDir += new Vector2(0.0f, 1.0f);
+
+                if (!facingRight)
+                {
+                    FaceDirection();
+                }
+            }
+        }
+        //Vertical (left) player movement
+        if (isVertical && !isRight)
+        {
+            if (Input.GetKey(KeyCode.A))
+            {
+                movementDir += new Vector2(0.0f, 1.0f);
+
+                if (facingRight)
+                {
+                    FaceDirection();
+                }
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                movementDir += new Vector2(0.0f, -1.0f);
+
+                if (!facingRight)
+                {
+                    FaceDirection();
+                }
             }
         }
 
@@ -79,34 +128,69 @@ public class PlayerController : MonoBehaviour
     //Flip Player when they are on the roof
     void Flip()
     {
-        if (!top)
+        //Flip for horizontal
+        if (!isVertical)
         {
-            transform.eulerAngles = new Vector3(0, 0, 180f);
+            if (!top)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 180f);
+            }
+            else
+            {
+                transform.eulerAngles = Vector3.zero;
+            }
         }
-        else
+        //Flip for vertical (right)
+        if (isVertical && isRight)
         {
-            transform.eulerAngles = Vector3.zero;
+            if (!top)
+            {
+                transform.eulerAngles = new Vector3(0, 0, -90f);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 90f);
+            }
+        }
+        //Flip for vertical (left)
+        if (isVertical && !isRight)
+        {
+            if (!top)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 90f);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, -90f);
+            }
         }
 
         facingRight = !facingRight;
         top = !top;
     }
 
-    /*void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Check if Player is touching roof or floor
-        for (int i = 0; i < collision.contacts.Length; i++)
-        {
-            if (collision.contacts[i].normal.y > 0 || collision.contacts[i].normal.y < 0)
-            {
-                isGrounded = true;
-            }
-        }
-    }*/
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         isGrounded = true;
     }
 
+    public bool GetIsGrounded()
+    {
+        return isGrounded;
+    }
+
+    public bool GetIsVertical()
+    {
+        return isVertical;
+    }
+
+    public void SetIsVertical(bool vertical)
+    {
+        isVertical = vertical;
+    }
+
+    public void SetIsRight(bool right)
+    {
+        isRight = right;
+    }
 }
