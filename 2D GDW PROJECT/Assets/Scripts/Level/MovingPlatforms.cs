@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatforms : MonoBehaviour
 {
     [SerializeField] GameObject[] waypoints;
     [SerializeField] int speed;
 
+    PlayerController player;
+
+
     int num;
 
+    private void Start()
+    {
+        player = GetComponent<PlayerController>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,4 +30,6 @@ public class MovingPlatform : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, waypoints[num].transform.position, Time.deltaTime * speed);
     }
+
+ 
 }

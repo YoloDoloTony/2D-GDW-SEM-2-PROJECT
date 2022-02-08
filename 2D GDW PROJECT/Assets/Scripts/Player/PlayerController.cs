@@ -169,9 +169,21 @@ public class PlayerController : MonoBehaviour
         top = !top;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         isGrounded = true;
+        
+        if (collision.gameObject.CompareTag("platform"))
+        {
+            transform.parent = collision.gameObject.transform;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("platform"))
+        {
+            transform.parent = null;
+        }
     }
 
     public bool GetIsGrounded()
