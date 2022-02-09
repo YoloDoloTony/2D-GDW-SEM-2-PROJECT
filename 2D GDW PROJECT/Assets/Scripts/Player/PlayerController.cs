@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed;
     bool facingRight = true;
 
+    public float dashForce;
+
     //Gravity Variables
     bool top;
     bool isGrounded;
@@ -30,7 +32,15 @@ public class PlayerController : MonoBehaviour
         {
             SwitchGravity();
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Debug.Log("pressed shift");
+            Dash();
+        }
     }
+
+
 
     //Player Movement
     private void MovePlayer()
@@ -103,10 +113,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
         rb.velocity = movementDir * (playerSpeed);
     }
-
     //Switches what way player is facing
     private void FaceDirection()
     {
@@ -115,7 +123,6 @@ public class PlayerController : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
-
     //180 degree Gravity Switch
     private void SwitchGravity()
     {
@@ -164,11 +171,9 @@ public class PlayerController : MonoBehaviour
                 transform.eulerAngles = new Vector3(0, 0, -90f);
             }
         }
-
         facingRight = !facingRight;
         top = !top;
     }
-
     public void OnTriggerEnter2D(Collider2D collision)
     {
         isGrounded = true;
@@ -185,7 +190,6 @@ public class PlayerController : MonoBehaviour
             transform.parent = null;
         }
     }
-
     public bool GetIsGrounded()
     {
         return isGrounded;
@@ -204,5 +208,21 @@ public class PlayerController : MonoBehaviour
     public void SetIsRight(bool right)
     {
         isRight = right;
+    }
+
+    public void Dash()
+    {
+
+        Debug.Log("dash");
+        //rb.velocity = new Vector2(rb.velocity.x,0f);
+        if (facingRight)
+        {
+            rb.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
+        }
+        if (!facingRight)
+        {
+            rb.AddForce(transform.right * dashForce * -1, ForceMode2D.Impulse);
+        }
+
     }
 }
