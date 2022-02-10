@@ -6,11 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    public LayerMask ObjectLayer;
+
     //Player Movement
     public float playerSpeed;
     bool facingRight = true;
 
+    Vector2 movementDir = new Vector2(0.0f, 0.0f);
+
     public float dashForce;
+    public float delayTime;
+    private float save;
 
     //Gravity Variables
     bool top;
@@ -18,13 +24,17 @@ public class PlayerController : MonoBehaviour
     bool isVertical;
     bool isRight;
 
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        save = delayTime;
     }
 
     void Update()
     {
+        Debug.Log(AbleToDash());
+        
         MovePlayer();
 
         //Check for Switch Gravity Input
@@ -33,11 +43,14 @@ public class PlayerController : MonoBehaviour
             SwitchGravity();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && AbleToDash())
         {
             Debug.Log("pressed shift");
             Dash();
         }
+        AbleToDash();
+ 
+       
     }
 
 
@@ -45,7 +58,8 @@ public class PlayerController : MonoBehaviour
     //Player Movement
     private void MovePlayer()
     {
-        Vector2 movementDir = new Vector2(0.0f, 0.0f);
+        
+        movementDir = new Vector2(0f, 0f);
 
         //Horizontal player movement
         if (!isVertical)
@@ -214,15 +228,62 @@ public class PlayerController : MonoBehaviour
     {
 
         Debug.Log("dash");
+        
         //rb.velocity = new Vector2(rb.velocity.x,0f);
+        //if (facingRight)
+        //{
+        //    rb.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
+        //}
+        //if (!facingRight)
+        //{
+        //    rb.AddForce(transform.right * dashForce * -1, ForceMode2D.Impulse);
+        //}
+
+        //Adds to the player's transform
+
+
+
         if (facingRight)
         {
-            rb.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
+            rb.transform.position += Vector3.right * dashForce;
         }
         if (!facingRight)
         {
-            rb.AddForce(transform.right * dashForce * -1, ForceMode2D.Impulse);
+            rb.transform.position += Vector3.right * dashForce * -1;
         }
+        ResetTimer();
 
     }
+    // checks if the delay is up or not
+   /* public bool CanDash()
+    {
+        if (delayTime - Time.realtimeSinceStartup < 0)
+        {
+            if (AbleToDash())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            delayTime -= Time.deltaTime;
+            return false;
+        }
+    }*/
+    // you know what this does 
+    public void ResetTimer()
+    {
+        delayTime += Time.realtimeSinceStartup + save;
+    }
+
+    private bool AbleToDash()
+    {
+        return Physics2D.Raycast(rb.transform.position, Vector2.right, dashForce, ObjectLayer).collider == null;
+    }
+    
+
 }

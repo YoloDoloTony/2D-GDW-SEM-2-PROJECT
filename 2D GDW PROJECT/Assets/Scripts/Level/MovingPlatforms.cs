@@ -16,9 +16,10 @@ public class MovingPlatforms : MonoBehaviour
     {
         player = GetComponent<PlayerController>();
     }
-    // Update is called once per frame
+    
     void Update()
     {
+        //checks if the distance between the platform and waypoint is 0
         if (Vector2.Distance(waypoints[num].transform.position, transform.position) == 0)
         {
             num++;
@@ -27,7 +28,7 @@ public class MovingPlatforms : MonoBehaviour
                 num = 0;
             }
         }
-
+        //moves the platform to the waypoint at num
         transform.position = Vector2.MoveTowards(transform.position, waypoints[num].transform.position, Time.deltaTime * speed);
     }
 
