@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour
             Dash();
         }
         AbleToDash();
+
+
  
        
     }
@@ -282,7 +284,14 @@ public class PlayerController : MonoBehaviour
 
     private bool AbleToDash()
     {
-        return Physics2D.Raycast(rb.transform.position, Vector2.right, dashForce, ObjectLayer).collider == null;
+        if (facingRight)
+        {
+            return Physics2D.Raycast(rb.transform.position, Vector2.right, dashForce, ObjectLayer).collider == null;
+        }
+        else
+        {
+            return Physics2D.Raycast(rb.transform.position, Vector2.right * -1, dashForce, ObjectLayer).collider == null;
+        }      
     }
     
 
