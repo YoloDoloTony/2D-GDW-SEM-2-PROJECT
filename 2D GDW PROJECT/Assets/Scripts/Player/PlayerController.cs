@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public float dashForce;
     public float delayTime;
     private float save;
+    Vector2 currentPos;
+    
+
 
     //Gravity Variables
     bool top;
@@ -33,7 +36,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(AbleToDash());
+        Debug.DrawRay(transform.position, movementDir * dashForce, Color.green);
+
+        Debug.Log("able to dash is " + AbleToDash());
         
         MovePlayer();
 
@@ -48,8 +53,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("pressed shift");
             Dash();
         }
-        AbleToDash();
-
+        
 
  
        
@@ -60,7 +64,7 @@ public class PlayerController : MonoBehaviour
     //Player Movement
     private void MovePlayer()
     {
-        
+        updateScammerValue();
         movementDir = new Vector2(0f, 0f);
 
         //Horizontal player movement
@@ -245,19 +249,15 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (facingRight)
-        {
-            rb.transform.position += Vector3.right * dashForce;
-        }
-        if (!facingRight)
-        {
-            rb.transform.position += Vector3.right * dashForce * -1;
-        }
+        
+
+        currentPos += movementDir * dashForce;
+        transform.position = currentPos;
         ResetTimer();
 
     }
     // checks if the delay is up or not
-   /* public bool CanDash()
+    public bool CanDash()
     {
         if (delayTime - Time.realtimeSinceStartup < 0)
         {
@@ -275,7 +275,7 @@ public class PlayerController : MonoBehaviour
             delayTime -= Time.deltaTime;
             return false;
         }
-    }*/
+    }
     // you know what this does 
     public void ResetTimer()
     {
@@ -292,6 +292,11 @@ public class PlayerController : MonoBehaviour
         {
             return Physics2D.Raycast(rb.transform.position, Vector2.right * -1, dashForce, ObjectLayer).collider == null;
         }      
+    }
+
+    private void updateScammerValue()
+    {
+        currentPos = new Vector2(transform.position.x, transform.position.y);
     }
     
 

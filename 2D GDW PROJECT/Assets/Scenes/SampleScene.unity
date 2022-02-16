@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 11343287}
   m_Layer: 7
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 37029434}
   m_Layer: 7
   m_Name: Square (24)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 37795359}
   m_Layer: 7
   m_Name: Square (27)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 92434688}
   m_Layer: 7
   m_Name: Square (16)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 149268940}
   m_Layer: 7
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 153250304}
   m_Layer: 7
   m_Name: Square (29)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 217689479}
   m_Layer: 7
   m_Name: Square (31)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1204,7 +1204,7 @@ GameObject:
   - component: {fileID: 338227376}
   m_Layer: 7
   m_Name: Square (22)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1313,7 +1313,7 @@ GameObject:
   - component: {fileID: 384349429}
   m_Layer: 7
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 420548167}
   m_Layer: 7
   m_Name: Square (33)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 439386571}
   m_Layer: 7
   m_Name: Square (17)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1664,7 +1664,7 @@ GameObject:
   - component: {fileID: 449906644}
   m_Layer: 7
   m_Name: Square (30)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1876,7 +1876,7 @@ GameObject:
   - component: {fileID: 535663371}
   m_Layer: 7
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2015,7 +2015,7 @@ GameObject:
   - component: {fileID: 677123572}
   m_Layer: 7
   m_Name: Square (11)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2124,7 +2124,7 @@ GameObject:
   - component: {fileID: 705593280}
   m_Layer: 7
   m_Name: Square (23)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2245,7 +2245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708824914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.63, z: 0}
+  m_LocalPosition: {x: 0.03, y: 0.344, z: 0}
   m_LocalScale: {x: 0.2054, y: 0.31654686, z: 1}
   m_Children: []
   m_Father: {fileID: 1618774898}
@@ -2315,7 +2315,7 @@ GameObject:
   - component: {fileID: 844846553}
   m_Layer: 7
   m_Name: Square (15)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2424,7 +2424,7 @@ GameObject:
   - component: {fileID: 1007818021}
   m_Layer: 7
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2615,7 +2615,7 @@ GameObject:
   - component: {fileID: 1047145039}
   m_Layer: 7
   m_Name: Square (9)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2838,7 +2838,7 @@ GameObject:
   - component: {fileID: 1155805198}
   m_Layer: 7
   m_Name: Square (26)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2947,7 +2947,7 @@ GameObject:
   - component: {fileID: 1160992880}
   m_Layer: 7
   m_Name: Square (32)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3056,7 +3056,7 @@ GameObject:
   - component: {fileID: 1172339914}
   m_Layer: 7
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3165,7 +3165,7 @@ GameObject:
   - component: {fileID: 1182621988}
   m_Layer: 7
   m_Name: Square (34)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3274,7 +3274,7 @@ GameObject:
   - component: {fileID: 1201173013}
   m_Layer: 7
   m_Name: Square (28)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3383,7 +3383,7 @@ GameObject:
   - component: {fileID: 1240579452}
   m_Layer: 7
   m_Name: Square (18)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3522,7 +3522,7 @@ GameObject:
   - component: {fileID: 1352239747}
   m_Layer: 7
   m_Name: Square (20)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3849,7 +3849,7 @@ GameObject:
   - component: {fileID: 1416315897}
   m_Layer: 7
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3958,7 +3958,7 @@ GameObject:
   - component: {fileID: 1456278833}
   m_Layer: 7
   m_Name: Square (8)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4406,7 +4406,7 @@ GameObject:
   - component: {fileID: 1517463651}
   m_Layer: 7
   m_Name: Square (21)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4515,7 +4515,7 @@ GameObject:
   - component: {fileID: 1540605653}
   m_Layer: 7
   m_Name: Square (35)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 1574722437}
   m_Layer: 7
   m_Name: Square (10)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4842,7 +4842,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.5887635, g: 0.237362, b: 0.990566, a: 1}
   m_FlipX: 0
@@ -4862,8 +4862,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618774896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.97, y: -0.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.97, y: 2.08, z: 0}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children:
   - {fileID: 708824915}
   - {fileID: 1715241824}
@@ -4888,8 +4888,8 @@ MonoBehaviour:
   light: {fileID: 708824914}
   gunPos: {fileID: 1907271644}
   bullet: {fileID: 7458245197862731453, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-  bulletSpeed: 5
-  fireRate: 700
+  bulletSpeed: 30
+  fireRate: 2
 --- !u!1 &1636636481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,7 +4903,7 @@ GameObject:
   - component: {fileID: 1636636483}
   m_Layer: 7
   m_Name: Square (25)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5051,7 +5051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1671080049
 Transform:
   m_ObjectHideFlags: 0
@@ -5084,7 +5084,7 @@ GameObject:
   - component: {fileID: 1691815891}
   m_Layer: 7
   m_Name: Square (14)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5255,14 +5255,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715241822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.67, z: 0}
-  m_LocalScale: {x: 0.3407, y: 0.8231, z: 1}
+  m_LocalRotation: {x: 0.00033815054, y: -0.008721221, z: -0.99921113, w: -0.038742714}
+  m_LocalPosition: {x: 0.014, y: -0.359, z: 0}
+  m_LocalScale: {x: 0.3407, y: 0.959062, z: 1}
   m_Children:
   - {fileID: 1907271644}
   m_Father: {fileID: 1618774898}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1, y: 0, z: -184.441}
 --- !u!1 &1846060924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,7 +5276,7 @@ GameObject:
   - component: {fileID: 1846060927}
   m_Layer: 7
   m_Name: Square (12)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5385,7 +5385,7 @@ GameObject:
   - component: {fileID: 1855487390}
   m_Layer: 7
   m_Name: Square (13)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5576,7 +5576,7 @@ GameObject:
   - component: {fileID: 1919265810}
   m_Layer: 7
   m_Name: Square (19)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5751,7 +5751,7 @@ GameObject:
   - component: {fileID: 2014367077}
   m_Layer: 7
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5862,7 +5862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2074701979
 Transform:
   m_ObjectHideFlags: 0
@@ -5882,67 +5882,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &753073006944575029
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7458245197862731453, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_Name
-      value: Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7458245197862731453, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8228487183787097403, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c32e2c7c904ab5340b3666e7d3d868bd, type: 3}
 --- !u!1001 &2218681660033360420
 PrefabInstance:
   m_ObjectHideFlags: 0
